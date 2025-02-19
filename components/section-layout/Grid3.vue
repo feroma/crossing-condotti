@@ -41,12 +41,7 @@ export default {
   },
   components: {},
   computed: {
-    sentenceClasses(){
-      return {
-        'div' :'sentence d-flex align-items-center justify-content-center p-3 p-lg-5 h-100',
-        'text':'text-serif h4 text-gray-5 text-center'
-      }
-    },
+
     sectionClass () {
       let sectionClassDefault = ['section-layout-' + this.section.layout]
       let response = sectionClassDefault

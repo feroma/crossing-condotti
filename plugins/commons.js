@@ -89,11 +89,17 @@ Vue.mixin({
       let development = process.env.NODE_ENV !== 'production'
       // let base = development ? '/' : '/crossing-manzoni/'
       //return  development ?  '/photos' : 'https://www.crossingmanzoni.it/photos'
-      return 'https://www.stage72.info/crossing-manzoni/_repo'
+      return 'https://www.stage72.info/crossing-condotti/_repo'
     },
     mediaModal(){
       return this.$store.getters.getMediaModal
-    }
+    },
+    sentenceClasses(){
+      return {
+        'div' :'sentence d-flex align-items-center justify-content-center p-3 p-lg-5 h-100',
+        'text':'_text-serif _h4 text-gray-5 text-center'
+      }
+    },
 
   }
 })

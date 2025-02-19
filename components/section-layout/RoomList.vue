@@ -11,7 +11,7 @@
           </p>
         </div>
       </div>
-      <div class="row flex-md-nowrap">
+      <div class="row">
 
          <layout-room-teaser
            v-for="room in rooms"

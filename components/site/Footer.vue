@@ -5,7 +5,7 @@
         <div class="row align-items-center justify-content-between py-2">
           <div class="logo d-none d-sm-block">
             <nuxt-link :to="items[0].slug" class="d-block">
-              <img src="~/assets/images/crossing_manzoni_LOGO_1x.png" class="img-fluid">
+              <img src="~/assets/images/crossing-condotti-logo-text.png" class="img-fluid">
             </nuxt-link>
           </div>
           <div class="footer-menu flex-grow-1 pl-lg-5">

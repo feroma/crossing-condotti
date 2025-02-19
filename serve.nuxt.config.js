@@ -1,7 +1,7 @@
 let development = process.env.NODE_ENV !== 'production'
 let base =  '/'
 //let base = development ? '/' : '/crossing-manzoni/'
-let baseURL = development  ? "http://data-crossing.local/" : 'https://www.stage72.info/crossing-manzoni/api/'
+let baseURL = development  ? "http://data-crossing-condotti.local/" : 'https://www.stage72.info/crossing-manzoni/api/'
 import axios from 'axios'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head

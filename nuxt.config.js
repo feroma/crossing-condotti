@@ -3,14 +3,14 @@ let development = process.env.NODE_ENV !== 'production'
 
 
 let base = development ? '/' : '/crossing-condotti/'
-let baseURL = development  ? "http://data-crossing.local/" : 'https://www.stage72.info/crossing-manzoni/api/'
+let baseURL = development  ? "http://data-crossing-condotti.local/" : 'https://www.stage72.info/crossing-condotti/api/'
 // let base = development ? '/' : '/cm_dev/'
-// let baseURL = development  ? "http://data-crossing.local/" : 'https://www.stage72.info/cm_dev/api/'
+// let baseURL = development  ? "http://data-crossing-condotti.local/" : 'https://www.stage72.info/cm_dev/api/'
 import axios from 'axios'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'crossing-manzoni',
+    title: 'crossing-condotti',
     htmlAttrs: {
       lang: 'en'
     },

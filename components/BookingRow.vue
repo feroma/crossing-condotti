@@ -222,8 +222,8 @@ export default {
 
         id_style: 20424,
         lingua_int: langPref,
-        id_albergo: 26980,
-        dc: 5519,
+        id_albergo: 11596,
+        dc: 2524,
         countryCode: 'IT'
         // adulti1:this.adults,
         // bambini1:this.childrens,

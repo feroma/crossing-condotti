@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="logo d-none d-sm-block">
-            <img src="~/assets/images/crossing_manzoni_LOGO_1x.png" class="img-fluid">
+            <img src="~/assets/images/crossing-condotti-logo-text.png" class="img-fluid">
           </div>
           <!--          <language-switcher/>-->
           <close @click.native.stop.prevent="toggleModal" class="ml-auto"/>
@@ -337,8 +337,8 @@ export default {
 
         id_style: 20424,
         lingua_int: langPref,
-        id_albergo: 26980,
-        dc: 5519,
+        id_albergo: 11596,
+        dc: 2524,
         countryCode: 'IT'
         // adulti1:this.adults,
         // bambini1:this.childrens,

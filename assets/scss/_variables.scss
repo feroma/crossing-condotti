@@ -60,42 +60,51 @@
 /**
 ------------serif
  */
+//@font-face {
+//  font-family: 'cc-serif';
+//  src: url('../fonts/serif/Juana-LightIt.woff2') format('woff2'),
+//  url('../fonts/serif/Juana-LightIt.woff') format('woff');
+//  font-weight: 300;
+//  font-style: italic;
+//  font-display: swap;
+//}
+//
+//@font-face {
+//  font-family: 'cc-serif';
+//  src: url('../fonts/serif/Juana-Light.woff2') format('woff2'),
+//  url('../fonts/serif/Juana-Light.woff') format('woff');
+//  font-weight: 300;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//
+//@font-face {
+//  font-family: 'cc-serif';
+//  src: url('../fonts/serif/Juana-ExtraLight.woff2') format('woff2'),
+//  url('../fonts/serif/Juana-ExtraLight.woff') format('woff');
+//  font-weight: 200;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//
+//@font-face {
+//  font-family: 'cc-serif';
+//  src: url('../fonts/serif/Juana-ExtraLightIt.woff2') format('woff2'),
+//  url('../fonts/serif/Juana-ExtraLightIt.woff') format('woff');
+//  font-weight: 200;
+//  font-style: italic;
+//  font-display: swap;
+//}
 @font-face {
-  font-family: 'cc-serif';
-  src: url('../fonts/serif/Juana-LightIt.woff2') format('woff2'),
-  url('../fonts/serif/Juana-LightIt.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'cc-serif';
-  src: url('../fonts/serif/Juana-Light.woff2') format('woff2'),
-  url('../fonts/serif/Juana-Light.woff') format('woff');
-  font-weight: 300;
+  font-family:'cc-serif';
+  src: url('../fonts/marschel-pro/files/marschel-pro.woff2') format('woff2'),
+  url('../fonts/marschel-pro/files/marschel-pro.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'cc-serif';
-  src: url('../fonts/serif/Juana-ExtraLight.woff2') format('woff2'),
-  url('../fonts/serif/Juana-ExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'cc-serif';
-  src: url('../fonts/serif/Juana-ExtraLightIt.woff2') format('woff2'),
-  url('../fonts/serif/Juana-ExtraLightIt.woff') format('woff');
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
-}
-
 
 /**
 ----------------------------CROSSING COLORS
@@ -107,8 +116,11 @@ $gray-3: #AFA796;
 $gray-4: #707070;
 $gray-5: #403F3C;
 $gray-6: #242220;
-$brick: #80352D;
-$brick-light: #D37B65;
+//$brick: #80352D;
+//$brick-light: #D37B65;
+$brick: #cca33f;
+$brick-light: #cac6ad;
+
 $black: #000;
 $cc_colors: ();
 $cc_colors: map-merge(

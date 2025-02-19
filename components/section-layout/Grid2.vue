@@ -4,10 +4,18 @@
    <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 mb-xs-gutter">
-          <picture-wrapper :item="section.items[0]"></picture-wrapper>
+          <picture-wrapper v-if="section.items[0].filename" :item="section.items[0]"></picture-wrapper>
+          <div :class="sentenceClasses.div" v-else>
+            <div :class="sentenceClasses.text"
+                 v-html="section.items[0].html"></div>
+          </div>
         </div>
         <div class="col-12 col-sm-6 mb-xs-gutter">
-          <picture-wrapper :item="section.items[1]"></picture-wrapper>
+          <picture-wrapper v-if="section.items[1].filename" :item="section.items[1]"></picture-wrapper>
+          <div :class="sentenceClasses.div" v-else>
+            <div :class="sentenceClasses.text"
+                 v-html="section.items[1].html"></div>
+          </div>
         </div>
       </div>
    </div>
@@ -26,6 +34,7 @@ export default {
   },
   components: {},
   computed: {
+
     sectionClass () {
       let sectionClassDefault = ['section-layout-' + this.section.layout]
       let response = sectionClassDefault

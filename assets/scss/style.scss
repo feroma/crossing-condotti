@@ -1,5 +1,4 @@
 @import "default";
-
 $switch_bp: sm;
 $switch_bp2: md;
 /**
@@ -1164,9 +1163,13 @@ $col4_col2: 33.6538%;
 }
 
 .furniture-item {
+  //img, svg {
+  //  max-width: 100px;
+  //  height: auto;
+  //}
   img, svg {
-    max-width: 100px;
-    height: auto;
+    max-height: 100px;
+    width: auto;
   }
 }
 
@@ -1657,12 +1660,14 @@ $table_border: solid 1px $gray-5;
 
 .room-teaser {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
   padding: $grid-gutter-width/2;
   @include media-breakpoint-up(sm) {
-    max-width: 50%;
+    max-width: 33.3333%;
   }
-
+  @include media-breakpoint-up(md) {
+    max-width: 25%;
+  }
   .room-info {
     position: absolute;
     left: 0;

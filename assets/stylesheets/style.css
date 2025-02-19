@@ -48,27 +48,11 @@
  */
 @font-face {
   font-family: 'cc-serif';
-  src: url("../fonts/serif/Juana-LightIt.woff2") format("woff2"), url("../fonts/serif/Juana-LightIt.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap; }
-@font-face {
-  font-family: 'cc-serif';
-  src: url("../fonts/serif/Juana-Light.woff2") format("woff2"), url("../fonts/serif/Juana-Light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/marschel-pro/files/marschel-pro.woff2") format("woff2"), url("../fonts/marschel-pro/files/marschel-pro.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'cc-serif';
-  src: url("../fonts/serif/Juana-ExtraLight.woff2") format("woff2"), url("../fonts/serif/Juana-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'cc-serif';
-  src: url("../fonts/serif/Juana-ExtraLightIt.woff2") format("woff2"), url("../fonts/serif/Juana-ExtraLightIt.woff") format("woff");
-  font-weight: 200;
-  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
   font-display: swap; }
 /**
 ----------------------------CROSSING COLORS
@@ -6551,8 +6535,8 @@ a.text-dark:hover, a.text-dark:focus {
       border: solid 2px #adb5bd; }
     .slick-dots li.slick-active button:before {
       opacity: 1;
-      background-color: #D37B65;
-      border-color: #D37B65; }
+      background-color: #cac6ad;
+      border-color: #cac6ad; }
 
 .page-enter-active,
 .page-leave-active {
@@ -6770,40 +6754,40 @@ a.text-dark:hover, a.text-dark:focus {
     color: #242220 !important; }
 
 .bg-brick, .brickline, .rome-banner .rome-link, .book-link {
-  background-color: #80352D !important; }
+  background-color: #cca33f !important; }
 
 .text-brick, .book-link:hover, .category-button-list .category_btn:hover:not(.active), .text-brick > a, .book-link:hover > a, .category-button-list .category_btn:hover:not(.active) > a {
-  color: #80352D !important; }
+  color: #cca33f !important; }
 
 .stroke-brick {
-  stroke: #80352D !important; }
+  stroke: #cca33f !important; }
 
 .border-bottom-brick {
-  border-bottom: solid 1px #80352D !important; }
+  border-bottom: solid 1px #cca33f !important; }
 
 .hover-brick {
   transition: all .4s; }
   .hover-brick:hover {
     text-decoration: none !important;
-    color: #80352D !important; }
+    color: #cca33f !important; }
 
 .bg-brick-light {
-  background-color: #D37B65 !important; }
+  background-color: #cac6ad !important; }
 
 .text-brick-light, .text-brick-light > a {
-  color: #D37B65 !important; }
+  color: #cac6ad !important; }
 
 .stroke-brick-light {
-  stroke: #D37B65 !important; }
+  stroke: #cac6ad !important; }
 
 .border-bottom-brick-light {
-  border-bottom: solid 1px #D37B65 !important; }
+  border-bottom: solid 1px #cac6ad !important; }
 
 .hover-brick-light, .footer a, .footer .footer-menu a {
   transition: all .4s; }
   .hover-brick-light:hover, .footer a:hover {
     text-decoration: none !important;
-    color: #D37B65 !important; }
+    color: #cac6ad !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -7520,7 +7504,7 @@ h4, .h4 {
 .gallery-section {
   position: relative; }
   .gallery-section h3 {
-    background-color: #80352D;
+    background-color: #cca33f;
     padding: 10px 30px;
     border-radius: 25px;
     text-align: center;
@@ -7767,8 +7751,8 @@ h4, .h4 {
         font-size: 16px; } }
 
 .furniture-item img, .furniture-item svg {
-  max-width: 100px;
-  height: auto; }
+  max-height: 100px;
+  width: auto; }
 
 .art-col {
   position: relative; }
@@ -7947,7 +7931,7 @@ h4, .h4 {
   .category-button-list .category_btn.active {
     background-color: #AFA796; }
   .category-button-list .category_btn:hover:not(.active) {
-    border: solid 2px #80352D; }
+    border: solid 2px #cca33f; }
 
 .scrollable-row {
   display: flex;
@@ -8071,8 +8055,8 @@ h4, .h4 {
     .arrow-label:hover .arrow-label-icon {
       width: 100%;
       opacity: 1;
-      background-color: #80352D;
-      border-color: #80352D !important; }
+      background-color: #cca33f;
+      border-color: #cca33f !important; }
 
 .contact-item .icon {
   max-width: 96px;
@@ -8101,11 +8085,14 @@ h4, .h4 {
 
 .room-teaser {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
   padding: 8px; }
   @media (min-width: 680px) {
     .room-teaser {
-      max-width: 50%; } }
+      max-width: 33.3333%; } }
+  @media (min-width: 920px) {
+    .room-teaser {
+      max-width: 25%; } }
   .room-teaser .room-info {
     position: absolute;
     left: 0;
@@ -8291,7 +8278,7 @@ section {
 #booking-modal .vc-highlight {
   width: 48px;
   height: 48px;
-  background-color: #D37B65 !important; }
+  background-color: #cac6ad !important; }
   @media (min-width: 1918px) {
     #booking-row .vc-highlight,
     #booking-modal .vc-highlight {
