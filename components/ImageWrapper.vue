@@ -49,8 +49,8 @@ export default {
 
     ImageBaseUrl () {
       let development = process.env.NODE_ENV !== 'production'
-      let base = development ? '/' : '/crossing-manzoni/'
-      return development ? '/photos' : 'https://www.crossingmanzoni.it/photos'
+      let base = development ? '/' : '/crossing-condotti/'
+      return development ? '/photos' : 'https://www.crossingcondotti.it/photos'
     }
 
   },

@@ -6,7 +6,7 @@ import axios from 'axios'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'crossing-manzoni',
+    title: 'crossing-condotti',
     htmlAttrs: {
       lang: 'en'
     },

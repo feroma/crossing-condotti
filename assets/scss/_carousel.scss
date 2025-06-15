@@ -92,3 +92,28 @@ $dots-radius: 20px;
   }
 
 }
+.custom-arrow{
+
+  position: absolute;
+  z-index: 20;
+  top:0;
+  height:  calc(100% - 45px);
+  width: 40px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255,255,255,0.9);
+  cursor: pointer;
+  &.slick-prev{
+    left: 0;
+  }
+  &.slick-next{
+    right: 0;
+  }
+}
+.room-list-carousel{
+
+  .slick-dots{
+    position: relative;
+    padding-top: 15px;
+  }
+}

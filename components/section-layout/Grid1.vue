@@ -7,8 +7,27 @@
           <picture-wrapper :item="section.items[0]"></picture-wrapper>
         </div>
         <div class="col-12 col-sm-4 d-flex flex-column">
-          <picture-wrapper class="_mb-xs-gutter" :item="section.items[1]"></picture-wrapper>
-          <picture-wrapper class="mb-xs-gutter" :item="section.items[2]"></picture-wrapper>
+
+          <picture-wrapper v-if="section.items[1].filename"
+                   class="_mb-xs-gutter" :item="section.items[1]"></picture-wrapper>
+
+          <div :class="section.items[1].class" v-else>
+            <div :class="sentenceClasses.div">
+              <div :class="sentenceClasses.text"
+                   v-html="section.items[1].html"></div>
+            </div>
+          </div>
+
+          <picture-wrapper v-if="section.items[2].filename"
+                    class="mb-xs-gutter" :item="section.items[2]"></picture-wrapper>
+
+          <div :class="section.items[2].class" v-else>
+            <div :class="sentenceClasses.div">
+              <div :class="sentenceClasses.text"
+                   v-html="section.items[2].html"></div>
+            </div>
+          </div>
+
         </div>
       </div>
    </div>

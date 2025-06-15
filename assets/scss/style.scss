@@ -1,29 +1,32 @@
 @import "default";
+
 $switch_bp: sm;
 $switch_bp2: md;
 /**
 -----------------custom grids
  */
 .base_font_size {
-  font-size: 16px!important;
-  line-height: 20px!important;
+  font-size: 16px !important;
+  line-height: 20px !important;
 
   @include media-breakpoint-up(sm) {
-    font-size: 16px!important;
-    line-height: 22px!important;
+    font-size: 16px !important;
+    line-height: 22px !important;
   }
   @include media-breakpoint-up(md) {
-    font-size: 16px!important;
-    line-height: 22px!important;
+    font-size: 16px !important;
+    line-height: 22px !important;
   }
   @include media-breakpoint-up(xl) {
-    font-size: 19px!important;
-    line-height: 30px!important;
+    font-size: 19px !important;
+    line-height: 30px !important;
   }
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
 body {
   font-weight: 300;
   overflow-x: hidden;
@@ -51,7 +54,18 @@ h1, .h1 {
     line-height: 68px;
 
   }
+
+  &.text-white {
+    text-shadow: 0px 0px 12px $brick-dark;
+  }
 }
+
+.intro-section {
+  p {
+    text-shadow: 0px 0px 7px $brick-dark;
+  }
+}
+
 .h1b {
   @extend .text-serif;
   font-size: 24px;
@@ -67,6 +81,7 @@ h1, .h1 {
     line-height: 48px;
   }
 }
+
 h2, .h2 {
   @extend .text-serif;
   font-size: 30px;
@@ -114,6 +129,10 @@ h4, .h4 {
   font-size: 18px;
   line-height: 20px;
   @include media-breakpoint-up(lg) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  @include media-breakpoint-up(xl) {
     font-size: 24px;
     line-height: 32px;
   }
@@ -127,10 +146,12 @@ h4, .h4 {
     line-height: 26px;
   }
 }
+
 .h6 {
   font-size: 14px;
   line-height: 20px;
 }
+
 p, .p {
   //margin-bottom: 28px;
   //@include media-breakpoint-up(md) {
@@ -156,6 +177,7 @@ p, .p {
   padding-top: $grid-gutter-width/2;
   padding-bottom: $grid-gutter-width/2;
 }
+
 .py-sm-gutter {
   @include media-breakpoint-up(sm) {
     padding-top: $grid-gutter-width/2;
@@ -163,6 +185,7 @@ p, .p {
   }
 
 }
+
 .py-gutter2 {
   padding-top: $grid-gutter-width;
   padding-bottom: $grid-gutter-width;
@@ -171,36 +194,48 @@ p, .p {
 .pt-gutter {
   padding-top: $grid-gutter-width/2;
 }
+
 .pt-sm-gutter {
   @include media-breakpoint-up(sm) {
     padding-top: $grid-gutter-width/2;
   }
 }
+
 .pb-gutter {
   padding-bottom: $grid-gutter-width/2;
 }
+
 .my-gutter {
   margin-top: $grid-gutter-width/2;
   margin-bottom: $grid-gutter-width/2;
 }
+
 .my-gutter2 {
   margin-top: $grid-gutter-width;
   margin-bottom: $grid-gutter-width;
 }
+
 .my-sm-gutter {
   @include media-breakpoint-up(sm) {
     margin-top: $grid-gutter-width/2;
     margin-bottom: $grid-gutter-width/2;
   }
 }
+
 .my-sm-gutter2 {
   @include media-breakpoint-up(sm) {
     margin-top: $grid-gutter-width;
     margin-bottom: $grid-gutter-width;
   }
 }
-.mb-xs-gutter{
+
+.mb-xs-gutter {
   @include media-breakpoint-down(xs) {
+    margin-bottom: $grid-gutter-width/2;
+  }
+}
+.mb-lg-gutter {
+  @include media-breakpoint-up(lg) {
     margin-bottom: $grid-gutter-width/2;
   }
 }
@@ -310,6 +345,7 @@ $col4_col2: 33.6538%;
     }
   }
 }
+
 /*
 .section {
   position: relative;
@@ -500,7 +536,7 @@ $col4_col2: 33.6538%;
   }
 
 
-  .language-switcher {
+  /*.language-switcher {
     display: flex;
     justify-content: flex-end;
 
@@ -531,7 +567,52 @@ $col4_col2: 33.6538%;
     @include media-breakpoint-up(xl) {
       font-size: 24px;
     }
+  }*/
+
+
+  .language-switcher {
+    display: flex;
+    justify-content: flex-end;
+
+
+    span, a {
+      display: block;
+      padding: 15px 15px;
+      @include media-breakpoint-up(xl) {
+        padding: 15px 30px;
+      }
+      // height: 50px;
+      // display: flex;
+      // align-items: center;
+      @extend .text-gray-1;
+
+      font-weight: normal;
+    }
+
+    a {
+      text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.85);
+    }
+
+    span {
+      opacity: 1;
+      background-color: $brick;
+      border-radius: 25px;
+      color: white;
+    }
+
+    .divisore {
+      width: 1px;
+      display: none;
+      @extend .bg-gray-1
+    }
+
+
+    font-size: 18px;
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+    }
   }
+
 
   #menu-icon {
     cursor: pointer;
@@ -665,6 +746,7 @@ $col4_col2: 33.6538%;
     }
   }
 }
+
 #media-modal,
 #booking-modal,
 #menu-modal {
@@ -688,7 +770,8 @@ $col4_col2: 33.6538%;
     @include media-breakpoint-up(sm) {
       padding: 107px 30px 30px;
     }
-    > .container{
+
+    > .container {
       @include media-breakpoint-down(xs) {
         padding: 0;
       }
@@ -703,7 +786,7 @@ $col4_col2: 33.6538%;
 
 }
 
-.menu-book-block{
+.menu-book-block {
   @include media-breakpoint-up(md) {
     position: absolute;
     right: 30px;
@@ -754,6 +837,7 @@ $col4_col2: 33.6538%;
     max-width: 100% !important;
   }
 }
+
 /*#media-modal{
   .modal-content{
     padding-top: 105px;
@@ -926,12 +1010,13 @@ $col4_col2: 33.6538%;
   }
 
   .footer & {
-  //  border-top: solid 1px rgba(255, 255, 255, 0.3);
- //   padding-top: 15px;
+    //  border-top: solid 1px rgba(255, 255, 255, 0.3);
+    //   padding-top: 15px;
     justify-content: center;
     @include media-breakpoint-up(sm) {
       justify-content: flex-end;
     }
+
     .h4 {
       display: none
     }
@@ -969,10 +1054,10 @@ $col4_col2: 33.6538%;
 .picture-wrapper {
   //background-color: $brick;
   &.patina-1 {
-    background-color: $gray-5;
+    // background-color: $gray-5;
 
     img {
-      opacity: 0.75;
+      //opacity: 0.75;
     }
   }
 
@@ -987,6 +1072,7 @@ $col4_col2: 33.6538%;
     max-height: 100vh;
     object-fit: cover;
   }
+
   @include media-breakpoint-down(xs) {
     &.img-center {
       picture {
@@ -1007,6 +1093,7 @@ $col4_col2: 33.6538%;
     picture {
       @extend .py-sm-gutter;
     }
+
     @include media-breakpoint-up(md) {
       height: 90vh;
       max-height: 970px;
@@ -1030,6 +1117,7 @@ $col4_col2: 33.6538%;
     picture {
       @extend .py-sm-gutter;
     }
+
     @include media-breakpoint-up(sm) {
       height: 45vh;
       max-height: 485px;
@@ -1129,9 +1217,19 @@ $col4_col2: 33.6538%;
 
 }
 
+.sentence-wrapper{
+  &.half-height {
+    @include media-breakpoint-up(sm) {
+      height: 45vh;
+      max-height: 485px;
+    }
+  }
+}
 .sentence {
   border-bottom: solid 1px $gray-5;
+
 }
+
 
 .bordered-list {
   border: solid 1px $gray-5;
@@ -1163,10 +1261,7 @@ $col4_col2: 33.6538%;
 }
 
 .furniture-item {
-  //img, svg {
-  //  max-width: 100px;
-  //  height: auto;
-  //}
+
   img, svg {
     max-height: 100px;
     width: auto;
@@ -1331,9 +1426,11 @@ $collection_item_width_lg: 220px;
     bottom: 0;
   }
 }
-.press-logo-inner-section{
-  padding-top: 30px!important;
-  &:before{
+
+.press-logo-inner-section {
+  padding-top: 30px !important;
+
+  &:before {
     content: '';
     position: absolute;
     height: 1px;
@@ -1350,7 +1447,8 @@ $collection_item_width_lg: 220px;
   .accordion-header {
     cursor: pointer;
   }
-  .accordion-header-col{
+
+  .accordion-header-col {
     @include media-breakpoint-up(sm) {
       flex: 1 1 33.333%;
       max-width: 33.333%;
@@ -1394,17 +1492,18 @@ $collection_item_width_lg: 220px;
     left: 50%;
     transform: translate(-50%, 0);
   }
-  .accordion-item-id{
+
+  .accordion-item-id {
     display: block;
     position: absolute;
     width: 1px;
     height: 1px;
     //background: #000;
     left: 0;
-    top:-120px;
+    top: -120px;
     z-index: 10;
     @include media-breakpoint-up(xl) {
-      top:-120px;
+      top: -120px;
     }
   }
 }
@@ -1464,6 +1563,7 @@ $collection_item_width_lg: 220px;
     height: auto;
     margin-right: 10px;
     flex-shrink: 0;
+
     path, circle {
       stroke: $gray-4;
     }
@@ -1663,11 +1763,14 @@ $table_border: solid 1px $gray-5;
   max-width: 50%;
   padding: $grid-gutter-width/2;
   @include media-breakpoint-up(sm) {
-    max-width: 33.3333%;
+    max-width: 100%;
   }
-  @include media-breakpoint-up(md) {
-    max-width: 25%;
-  }
+  //@include media-breakpoint-up(sm) {
+  //  max-width: 33.3333%;
+  //}
+  //@include media-breakpoint-up(md) {
+  //  max-width: 25%;
+  //}
   .room-info {
     position: absolute;
     left: 0;
@@ -1678,9 +1781,25 @@ $table_border: solid 1px $gray-5;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 15px;
+    @include media-breakpoint-down(xs) {
+      .h3 {
+        font-size: 18px !important;
+        line-height: 18px !important;
+      }
+      .p {
+        font-size: 12px !important;
+        line-height: 14px !important;
+      }
+    }
+  }
+
+  .picture-wrapper {
+    background-color: black;
   }
 
   img {
+
     transition: all 0.4s;
   }
 
@@ -1764,15 +1883,17 @@ section {
 ---------------------------------
  */
 #booking-row,
-#booking-modal{
+#booking-modal {
 
 
-  .booking-column{
+  .booking-column {
     flex: 1 1 100%;
     width: 100%;
     max-width: 100%;
-    padding-top: 120px;
-
+    padding-top: 100px;
+    @include media-breakpoint-up(sm) {
+      padding-top: 120px;
+    }
 
     @include media-breakpoint-up(xl) {
       flex: 1 1 75%;
@@ -1782,47 +1903,48 @@ section {
   }
 
 
-
-  .vc-pane{
+  .vc-pane {
     @include media-breakpoint-up(sm) {
       padding: 15px 30px;
     }
   }
-  .vc-weekday{
-    color: $white!important;
+
+  .vc-weekday {
+    color: $white !important;
   }
-  .vc-container{
-    background-color: $gray-5!important;
+
+  .vc-container {
+    background-color: $gray-5 !important;
     border: none;
-    & *{
-      font-family: $font-family-base!important;
-      font-size: 20px!important;
-      font-weight: 300!important;
-      line-height: 24px!important;
+
+    & * {
+      font-family: $font-family-base !important;
+      font-size: 20px !important;
+      font-weight: 300 !important;
+      line-height: 24px !important;
       @include media-breakpoint-up(xl) {
-        font-size: 16px!important;
-        line-height: 20px!important;
+        font-size: 16px !important;
+        line-height: 20px !important;
       }
     }
 
   }
 
-  .vc-day-content{
-    width: 48px!important;
-    height: 48px!important;
+  .vc-day-content {
+    width: 48px !important;
+    height: 48px !important;
     @include media-breakpoint-up(xl) {
-      width: 36px!important;
-      height: 36px!important;
+      width: 36px !important;
+      height: 36px !important;
     }
   }
-
-
 
 
   .vc-day {
     position: relative;
     min-height: 32px;
     z-index: 1;
+
     &.is-not-in-month * {
       opacity: 0;
       pointer-events: none;
@@ -1880,9 +2002,11 @@ section {
 
     user-select: none;
     cursor: pointer;
+
     &:hover {
       background-color: hsla(211, 25%, 84%, 0.3);
     }
+
     &:focus {
       font-weight: var(--font-bold);
       background-color: hsla(211, 25%, 84%, 0.4);
@@ -1895,9 +2019,11 @@ section {
       &:hover {
         background-color: hsla(216, 15%, 52%, 0.3);
       }
+
       &:focus {
         background-color: hsla(216, 15%, 52%, 0.4);
       }
+
       &.is-disabled {
         color: var(--gray-600);
       }
@@ -1917,33 +2043,37 @@ section {
       width: 36px;
       height: 36px;
     }
-    background-color: $brick-light!important;
+    background-color: $brick-light !important;
+
     &.vc-highlight-base-start {
       width: 50% !important;
-      background-color: rgba(255,255,255,0.5)!important;
+      background-color: rgba(255, 255, 255, 0.5) !important;
     }
+
     &.vc-highlight-base-end {
       width: 50% !important;
-      background-color: rgba(255,255,255,0.5)!important;
+      background-color: rgba(255, 255, 255, 0.5) !important;
     }
+
     &.vc-highlight-base-middle {
       width: 100%;
-      background-color: rgba(255,255,255,0.5)!important;
+      background-color: rgba(255, 255, 255, 0.5) !important;
     }
   }
 
 
 }
 
-#booking-modal{
-  .custom-select{
+#booking-modal {
+  .custom-select {
     @extend .h1b;
   }
-  .booking-date, .booking-date2{
+
+  .booking-date, .booking-date2 {
     flex: 1 1 100%;
     width: 100%;
     max-width: 100%;
-    padding: 15px;
+    padding: 5px 15px;
 
     @include media-breakpoint-up(sm) {
       padding: 30px;
@@ -1951,12 +2081,14 @@ section {
       width: 33.3333%;
       max-width: 33.3333%;
     }
-    .p{
+
+    .p {
       border-top: solid 1px $white;
       padding-top: 10px;
     }
   }
-  .booking-date2{
+
+  .booking-date2 {
 
     @include media-breakpoint-up(sm) {
 
@@ -2032,61 +2164,67 @@ section {
   }
 }
 
-#booking-row{
+#booking-row {
   position: absolute;
   bottom: 45px;
   left: 0;
   z-index: 10;
-  .rounded{
-    border-radius: 50px!important;
+
+  .rounded {
+    border-radius: 50px !important;
   }
-  .p{
+
+  .p {
     @extend .text-gray-1;
-    border-bottom: solid 1px rgba($gray-1,0.5);
+    border-bottom: solid 1px rgba($gray-1, 0.5);
     padding-top: 5px;
 
   }
-  .d-flex{
-    background-color: rgba($gray-5,1);
-    > div{
+
+  .d-flex {
+    background-color: rgba($gray-5, 1);
+
+    > div {
       flex: 1 1 16%;
       max-width: 16%;
       margin: 0 5px;
     }
+
     opacity: 0.5;
     transition: opacity 0.4s;
-    &:hover{
+
+    &:hover {
       opacity: 1;
     }
   }
 
 
   .book-link {
-   /* @extend .bg-brick;
-    @extend .text-gray-1;
+    /* @extend .bg-brick;
+     @extend .text-gray-1;
 
-    display: inline-block;
-    text-align: center;
-    letter-spacing: 0.3em;
-    @extend .h5;
-    line-height: 1 !important;
-    padding: 20px 60px 12px;
-    border-radius: 60px;
-    transition: all 0.4s;
-    &:hover {
-      text-decoration: none;
-      @extend .bg-gray-1;
-      @extend .text-brick
-    }
-    .header & {
-      @extend .base_font_size;
-    }*/
+     display: inline-block;
+     text-align: center;
+     letter-spacing: 0.3em;
+     @extend .h5;
+     line-height: 1 !important;
+     padding: 20px 60px 12px;
+     border-radius: 60px;
+     transition: all 0.4s;
+     &:hover {
+       text-decoration: none;
+       @extend .bg-gray-1;
+       @extend .text-brick
+     }
+     .header & {
+       @extend .base_font_size;
+     }*/
     letter-spacing: 0;
     height: 100%;
   }
 }
 
-.alert-message{
+.alert-message {
   text-align: center;
   border-top: solid 1px $red;
   border-bottom: solid 1px $red;
@@ -2094,14 +2232,12 @@ section {
 }
 
 
-
-
-.header-spacing-section{
-    min-height: 150px;
+.header-spacing-section {
+  min-height: 150px;
 }
 
 
-.phrase{
+.phrase {
   @extend .d-flex;
   @extend .align-items-center;
   @extend .justify-content-center;
@@ -2122,17 +2258,19 @@ section {
     min-height: 33vh;
   }
 }
-.gallery-photo{
+
+.gallery-photo {
   @extend .my-gutter2;
   @extend .my-sm-gutter2;
 }
-.gallery-grid-section{
+
+.gallery-grid-section {
   @include media-breakpoint-down(xs) {
-    >.container{
+    > .container {
       padding: 0;
       background-color: $gray-5;
     }
-    .phrase, .gallery-photo{
+    .phrase, .gallery-photo {
 
     }
   }
@@ -2140,13 +2278,13 @@ section {
 
 $topGap: 80px;
 $topGapMd: 160px;
-.press-grid-section{
+.press-grid-section {
   padding-top: $topGap;
   @include media-breakpoint-up(md) {
     padding-top: $topGapMd;
   }
 
-  &:before{
+  &:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -2157,12 +2295,14 @@ $topGapMd: 160px;
       height: $topGapMd*2;
     }
   }
-  >.container{
+
+  > .container {
     position: relative;
     z-index: 2;
   }
 }
-.press-logo{
+
+.press-logo {
   padding: 10px;
   flex: 0 1 auto;
   max-width: 25%;
@@ -2180,20 +2320,20 @@ $topGapMd: 160px;
   @include media-breakpoint-up(sm) {
     padding: 30px;
     max-width: 16.667%;
-    img{
+    img {
       max-width: 120px;
     }
   }
   @include media-breakpoint-up(lg) {
-    padding:  30px 60px;
-    img{
+    padding: 30px 60px;
+    img {
       max-width: 120px;
     }
   }
 
 }
 
-.rating-item{
+.rating-item {
   /*img{
     width:160px;
     height: auto;
@@ -2203,11 +2343,13 @@ $topGapMd: 160px;
     padding: 60px;
   }
 }
-.media-box{
+
+.media-box {
   text-align: center;
-  img{
-    height: auto!important;
-    object-fit: contain!important;
+
+  img {
+    height: auto !important;
+    object-fit: contain !important;
     max-height: none;
     max-width: 1200px;
   }
@@ -2215,10 +2357,10 @@ $topGapMd: 160px;
 }
 
 
-.border-gold{
-  border:solid 1px #B1AD95;
+.border-gold {
+  border: solid 1px #B1AD95;
 }
 
-.grayscale{
-  filter:grayscale(100%)
+.grayscale {
+  filter: grayscale(100%)
 }

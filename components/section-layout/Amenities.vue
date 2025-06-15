@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-small">
           <div class="bordered-list pt-4 p-3">
-            <h3>{{ section.title }}</h3>
+            <h3 class="h5 no-wrap">{{ section.title }}</h3>
 
             <div class="row">
               <div class="col-12 col-sm-6">

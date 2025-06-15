@@ -100,6 +100,11 @@ Vue.mixin({
         'text':'_text-serif _h4 text-gray-5 text-center'
       }
     },
-
+    sentenceHalfClasses(){
+      return {
+        'div' :'sentence d-flex align-items-center justify-content-center p-3 p-lg-5 h-100',
+        'text':'_text-serif _h4 text-gray-5 text-center'
+      }
+    },
   }
 })

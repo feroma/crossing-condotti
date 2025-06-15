@@ -15,7 +15,7 @@
 
             <img :srcset="ImageBaseUrl+'/home_portrait.jpg 2x'"
                  :src="ImageBaseUrl+'/home_mobile.jpg'"
-                 alt="Welcome to Crossing Manzoni"/>
+                 alt="Welcome to Crossing Condotti"/>
           </picture>
           <div class="grad-1"></div>
         </div>

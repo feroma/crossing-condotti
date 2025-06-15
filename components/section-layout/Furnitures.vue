@@ -7,7 +7,7 @@
           d-sm-flex flex-wrap
           align-items-start
           pt-4 p-3">
-            <h3 class="no-wrap">{{section.title}}</h3>
+            <h3 class="h5 no-wrap">{{section.title}}</h3>
             <div class="furniture-item"
                 v-for="(item,count)  in section.items"
                  :class = "section.items_class"

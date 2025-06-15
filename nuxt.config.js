@@ -10,7 +10,7 @@ import axios from 'axios'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'crossing-condotti',
+    title: 'Crossing Condotti',
     htmlAttrs: {
       lang: 'en'
     },
