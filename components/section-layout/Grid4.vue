@@ -10,11 +10,13 @@
         <div class="col-12 col-sm-4 mb-xs-gutter">
           <picture-wrapper v-if="section.items[1].filename" :item="section.items[1]"></picture-wrapper>
 
-
-          <div :class="sentenceClasses.div" v-else>
-            <div :class="sentenceClasses.text"
-                 v-html="section.items[1].html"></div>
+          <div :class="section.items[1].class" v-else>
+            <div :class="sentenceClasses.div" >
+              <div :class="sentenceClasses.text"
+                   v-html="section.items[1].html"></div>
+            </div>
           </div>
+
 
 
         </div>

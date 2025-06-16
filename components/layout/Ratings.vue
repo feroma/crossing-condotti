@@ -1,7 +1,7 @@
 <template>
   <div class="ratings  row  justify-content-center flex-wrap" :class="item.class">
 
-    <div class="rating-item text-center col-12 col-sm-4"
+    <div class="rating-item text-center col"
          v-for="(rate,count)  in item.items"
          :key="'item-'+count">
 

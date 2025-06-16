@@ -21,7 +21,7 @@
         <div class="row">
           <div class="col-sm-8">
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 col-sm-6">
                 <ul class="list-unstyled">
                   <!-- ------------ home-->
                   <li>
@@ -50,6 +50,10 @@
                   </li>
                 </ul>
               </div>
+
+            </div>
+            <div class="row">
+
 
 
               <div class="col-12 col-sm-6">

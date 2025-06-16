@@ -164,7 +164,7 @@ export default {
           'Rooms',
           'Adults',
           'Childrens',
-          'Prenota ora'
+          'Book Now'
         ],
         it: [
           'Prenota ora',

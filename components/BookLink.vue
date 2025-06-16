@@ -1,6 +1,6 @@
 <template>
   <a href="#" class="book-link" @click.stop.prevent="openBooking">
-    BOOK NOW
+    {{languageLabel }}
   </a>
 
 </template>
@@ -17,7 +17,11 @@ export default {
       show: false
     }
   },
-  computed: {},
+  computed: {
+    languageLabel(){
+      return this.currentLang === 'it' ? 'PRENOTA ORA' : 'BOOK NOW'
+    }
+  },
   methods: {
 
   },
