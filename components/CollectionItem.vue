@@ -21,7 +21,7 @@
             >
           </span>
     <span class="p">
-            {{item.description}}
+            {{ item.description }}
           </span>
     </span>
 
@@ -47,7 +47,7 @@ export default {
       required: true
     },
     index: {
-      type: Number,
+      type: Number
     }
   }
 

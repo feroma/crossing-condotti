@@ -12,13 +12,13 @@
       </div>
       <div v-if="item.body" v-html="item.body"></div>
       <div class="team-item-languages d-flex flex-wrap">
-          <div
-            v-if="item.languages && item.languages.length"
-            v-for="(lang,count) in item.languages"
-            :key="'cell-'+count"
-            class="pill bg-brick-light text-white mr-1 mb-1">
-            {{lang}}
-          </div>
+        <div
+          v-if="item.languages && item.languages.length"
+          v-for="(lang,count) in item.languages"
+          :key="'cell-'+count"
+          class="pill bg-brick-light text-white mr-1 mb-1">
+          {{ lang }}
+        </div>
       </div>
     </div>
   </div>
@@ -32,18 +32,16 @@ export default {
   name: "LayoutTeam",
   data () {
     return {
-      show: false,
+      show: false
     }
   },
   components: {},
-  computed: {
-  },
+  computed: {},
   created () {
   },
   mounted () {
   },
-  methods: {
-  },
+  methods: {},
   props: {
     item: {
       type: Object,

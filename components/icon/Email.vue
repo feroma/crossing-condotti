@@ -13,8 +13,6 @@
 <script>
 
 
-
-
 export default {
   name: "IconEmail",
   data () {
@@ -29,7 +27,7 @@ export default {
       type: String,
       default: '#B2AD97'
     }
-  },
+  }
 
 }
 </script>

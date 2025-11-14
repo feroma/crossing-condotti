@@ -10,11 +10,10 @@
                  v-for="(cell,count) in item.items"
                  :class="count%2?'odd':'even'"
                  :key="'cell-'+count">
-              <h4 class="text-sans text-center">{{cell.title}}</h4>
+              <h4 class="text-sans text-center">{{ cell.title }}</h4>
               <p class="text-center text-sm-left" v-html="cell.body"/>
             </div>
           </div>
-
 
 
         </div>
@@ -31,18 +30,16 @@ export default {
   name: "LayoutTable",
   data () {
     return {
-      show: false,
+      show: false
     }
   },
   components: {},
-  computed: {
-  },
+  computed: {},
   created () {
   },
   mounted () {
   },
-  methods: {
-  },
+  methods: {},
   props: {
     item: {
       type: Object,

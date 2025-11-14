@@ -1,48 +1,48 @@
 <template>
   <component :is="sectionTag" :class="sectionClass">
-<div class="container">
-  <div class="row justify-content-center">
-    <div :class="columnClass">
-      <component
-        v-if="section.titleBlock"
-
-        :is="'layout-'+section.titleBlock.layout"
-        :item="section.titleBlock">
-      </component>
-
-
-      <div v-if="section.items && carousel">
-        <VueSlickCarousel
-          v-bind="carousel" ref="carousel" class="_d-none _d-lg-block">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div :class="columnClass">
           <component
-            :is="'layout-'+item.layout"
-            v-for="(item,count)  in section.items"
-            :key="'item-'+count"
-            :item="item"/>
-        </VueSlickCarousel>
+            v-if="section.titleBlock"
+
+            :is="'layout-'+section.titleBlock.layout"
+            :item="section.titleBlock">
+          </component>
+
+
+          <div v-if="section.items && carousel">
+            <VueSlickCarousel
+              v-bind="carousel" ref="carousel" class="_d-none _d-lg-block">
+              <component
+                :is="'layout-'+item.layout"
+                v-for="(item,count)  in section.items"
+                :key="'item-'+count"
+                :item="item"/>
+            </VueSlickCarousel>
+          </div>
+          <div
+            :class="section.cta.class"
+            class="pt-3"
+            v-if="section.cta">
+            <a
+              v-if="section.cta.target"
+              :target="section.cta.target"
+              :href="ctaHref(section.cta)">
+              <arrow-label :label="section.cta.label"></arrow-label>
+            </a>
+            <nuxt-link
+              v-else
+              :to="ctaHref(section.cta)">
+              <arrow-label :label="section.cta.label"></arrow-label>
+            </nuxt-link>
+
+          </div>
+
+
+        </div>
       </div>
-      <div
-        :class="section.cta.class"
-        class="pt-3"
-        v-if="section.cta">
-        <a
-          v-if="section.cta.target"
-          :target="section.cta.target"
-          :href="ctaHref(section.cta)">
-          <arrow-label :label="section.cta.label"></arrow-label>
-        </a>
-        <nuxt-link
-          v-else
-          :to="ctaHref(section.cta)">
-          <arrow-label :label="section.cta.label"></arrow-label>
-        </nuxt-link>
-
-      </div>
-
-
     </div>
-  </div>
-</div>
 
   </component>
 </template>
@@ -69,7 +69,7 @@ export default {
         "slidesToShow": 1,
         "speed": 500,
         "adaptiveHeight": true
-      },
+      }
     }
   },
   components: {VueSlickCarousel, LayoutReview},
@@ -85,7 +85,7 @@ export default {
     sectionTag () {
       return this.section.tag || 'section'
     },
-    columnClass(){
+    columnClass () {
       return this.section.column || 'col-small'
     }
   },
@@ -101,7 +101,7 @@ export default {
     }
   },
   created () {
-    if(this.section.carousel){
+    if (this.section.carousel) {
       this.carousel = {...this.carousel, ...this.section.carousel}
     }
   }

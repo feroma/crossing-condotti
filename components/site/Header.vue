@@ -34,13 +34,13 @@ export default {
     }
   },
   computed: {
-    items(){
+    items () {
       return this.$store.getters['getMenuItemsByLang'](this.currentLang)
-    },
+    }
   },
   methods: {
-    toggleMenu(){
-        this.$store.commit('TOGGLE_MENU')
+    toggleMenu () {
+      this.$store.commit('TOGGLE_MENU')
     }
   },
   props: {},

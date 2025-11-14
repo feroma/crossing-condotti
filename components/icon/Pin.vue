@@ -20,8 +20,6 @@
 <script>
 
 
-
-
 export default {
   name: "IconPin",
   data () {
@@ -36,7 +34,7 @@ export default {
       type: String,
       default: '#B2AD97'
     }
-  },
+  }
 
 }
 </script>

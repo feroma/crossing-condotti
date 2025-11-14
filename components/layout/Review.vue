@@ -4,13 +4,13 @@
     <div class="review-body text-serif text-center mb-2 position-relative">
       <icon-quote-open/>
       <em>
-        {{item.body}}
+        {{ item.body }}
       </em>
       <icon-quote-close/>
     </div>
     <div class="review-author p text-sans text-center mb-1">
 
-        {{item.author}}
+      {{ item.author }}
 
     </div>
 
@@ -23,18 +23,16 @@ export default {
   name: "LayoutReview",
   data () {
     return {
-      show: false,
+      show: false
     }
   },
   components: {},
-  computed: {
-  },
+  computed: {},
   created () {
   },
   mounted () {
   },
-  methods: {
-  },
+  methods: {},
   props: {
     item: {
       type: Object,

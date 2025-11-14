@@ -43,7 +43,7 @@ export default {
     stripHtml (str) {
       str = str.replace("<br>", " ")
       return str.replace(/(<([^>]+)>)/gi, "")
-    },
+    }
   },
   props: {
     section: {

@@ -28,7 +28,7 @@
             </component>
             <div
               v-if="section.body"
-              :class="section.body.class"  v-html="section.body.html"></div>
+              :class="section.body.class" v-html="section.body.html"></div>
           </div>
 
         </div>
@@ -63,9 +63,7 @@ export default {
       return this.section.tag || 'section'
     }
   },
-  methods: {
-
-  },
+  methods: {},
   props: {
     section: {
       type: Object,

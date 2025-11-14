@@ -10,16 +10,15 @@
     </picture-wrapper>
     <span class="room-info text-center">
       <span class="h3 mb-1 text-serif text-white">
-        {{room.label}}
+        {{ room.label }}
       </span>
       <span class="p mb-0 text-sans text-white">
-        {{room.cat_info.label}}
+        {{ room.cat_info.label }}
       </span>
     </span>
 
 
   </nuxt-link>
-
 
 
 </template>
@@ -30,19 +29,16 @@ export default {
   name: "LayoutRoomTeaser",
   data () {
     return {
-      show: false,
+      show: false
     }
   },
   components: {},
-  computed: {
-
-  },
+  computed: {},
   created () {
   },
   mounted () {
   },
-  methods: {
-  },
+  methods: {},
   props: {
     room: {
       type: Object,

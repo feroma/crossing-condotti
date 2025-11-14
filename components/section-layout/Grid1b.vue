@@ -6,7 +6,7 @@
 
         <div class="col-12 col-sm-4 d-flex flex-column">
           <picture-wrapper v-if="section.items[1].filename"
-            class="_mb-xs-gutter" :item="section.items[1]"></picture-wrapper>
+                           class="_mb-xs-gutter" :item="section.items[1]"></picture-wrapper>
 
           <div :class="section.items[1].class" v-else>
             <div :class="sentenceClasses.div">

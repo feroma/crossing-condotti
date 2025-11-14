@@ -6,7 +6,7 @@
         <div class="col-12 col-sm-4 mb-xs-gutter">
           <picture-wrapper v-if="section.items[0].filename" :item="section.items[0]"></picture-wrapper>
           <div :class="section.items[0].class" v-else>
-            <div :class="sentenceClasses.div" >
+            <div :class="sentenceClasses.div">
               <div :class="sentenceClasses.text"
                    v-html="section.items[0].html"></div>
             </div>
@@ -24,7 +24,7 @@
         <div class="col-12 col-sm-4 mb-xs-gutter">
           <picture-wrapper v-if="section.items[2].filename" :item="section.items[2]"></picture-wrapper>
           <div :class="section.items[2].class" v-else>
-            <div :class="sentenceClasses.div" >
+            <div :class="sentenceClasses.div">
               <div :class="sentenceClasses.text"
                    v-html="section.items[2].html"></div>
             </div>

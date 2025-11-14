@@ -16,8 +16,7 @@
 export default {
   name: "Info",
   data () {
-    return {
-    }
+    return {}
   },
   computed: {},
   methods: {
@@ -29,7 +28,7 @@ export default {
       )
     }
   },
-  props: {},
+  props: {}
 
 }
 </script>

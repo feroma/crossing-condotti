@@ -6,7 +6,7 @@
       :class="item.title.class"
       class="text-center bordered-title"
     >
-      {{item.title.content}}
+      {{ item.title.content }}
     </component>
   </div>
 
@@ -19,18 +19,16 @@ export default {
   name: "LayoutBorderedTitle",
   data () {
     return {
-      show: false,
+      show: false
     }
   },
   components: {},
-  computed: {
-  },
+  computed: {},
   created () {
   },
   mounted () {
   },
-  methods: {
-  },
+  methods: {},
   props: {
     item: {
       type: Object,

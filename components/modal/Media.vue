@@ -40,15 +40,13 @@ export default {
       show: false
     }
   },
-  computed: {
-
-  },
+  computed: {},
   methods: {
-    toggleMediaModal(){
+    toggleMediaModal () {
       this.$store.commit('TOGGLE_MEDIA_MODAL')
     }
   },
-  props: {},
+  props: {}
 
 }
 </script>

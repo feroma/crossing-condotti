@@ -6,15 +6,14 @@
       v-if="item.cover"
       :item="item.cover">
     </picture-wrapper>
-      <div class="h4 mb-2 text-serif">
-        {{item.title}}
-      </div>
+    <div class="h4 mb-2 text-serif">
+      {{ item.title }}
+    </div>
     <a href="#" @click.prevent.stop="openMediaModal">
       <arrow-label :label="cta_label"/>
     </a>
 
-    </div>
-
+  </div>
 
 
 </template>
@@ -25,26 +24,26 @@ export default {
   name: "LayoutPressTeaser",
   data () {
     return {
-      show: false,
+      show: false
     }
   },
   components: {},
   computed: {
-      cta_label(){
-        return this.item['cta_label_'+this.currentLang]
-      }
+    cta_label () {
+      return this.item['cta_label_' + this.currentLang]
+    }
   },
   created () {
   },
   mounted () {
   },
   methods: {
-    openMediaModal(){
-      const payload =  {
-          show:true,
-          media: this.item.image,
-          gallery: [],
-          initial: 0
+    openMediaModal () {
+      const payload = {
+        show: true,
+        media: this.item.image,
+        gallery: [],
+        initial: 0
       }
       this.$store.commit('SET_MEDIA_MODAL', payload)
     }

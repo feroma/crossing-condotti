@@ -55,7 +55,6 @@
             <div class="row">
 
 
-
               <div class="col-12 col-sm-6">
                 <ul class="list-unstyled">
                   <li v-for="(cat, index) in categories" :key="'cat-'+index" v-if="index>0 && index<4">

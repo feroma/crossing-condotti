@@ -23,19 +23,16 @@ export default {
     }
   },
   computed: {
-      description(){
-        return this.item.description ?? '';
-      }
+    description () {
+      return this.item.description ?? ''
+    }
   },
-  methods: {
-
-
-  },
+  methods: {},
   props: {
     item: {
       type: Object,
       required: true
-    },
+    }
   },
   mounted () {
 

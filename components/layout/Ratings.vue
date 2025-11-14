@@ -6,7 +6,7 @@
          :key="'item-'+count">
 
       <div class="rate-title text-serif h3 mb-1 font-weight-light">
-        {{rate.title}}
+        {{ rate.title }}
       </div>
       <p class="rate-body mb-2" v-html="rate.body"/>
       <img
@@ -28,20 +28,19 @@ export default {
   name: "LayoutRatings",
   data () {
     return {
-      show: false,
+      show: false
     }
   },
   components: {},
-  computed: {
-  },
+  computed: {},
   created () {
   },
   mounted () {
   },
   methods: {
-    svgSource(filename) {
-      return this.ImageBaseUrl+'/ratings/'+filename
-    },
+    svgSource (filename) {
+      return this.ImageBaseUrl + '/ratings/' + filename
+    }
   },
   props: {
     item: {

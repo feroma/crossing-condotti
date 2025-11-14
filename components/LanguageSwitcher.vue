@@ -47,7 +47,7 @@ export default {
       const tNode = this.$store.getters['getMenuItemById'](this.pageTranslationId, type)
 
       console.log(tNode)
-      if(this.allowRouteChange){
+      if (this.allowRouteChange) {
         this.$router.push(tNode.slug)
       }
 

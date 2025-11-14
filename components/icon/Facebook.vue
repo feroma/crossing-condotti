@@ -11,8 +11,6 @@
 <script>
 
 
-
-
 export default {
   name: "IconFacebook",
   data () {
@@ -27,7 +25,7 @@ export default {
       type: String,
       default: '#ffffff'
     }
-  },
+  }
 
 }
 </script>

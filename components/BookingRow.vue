@@ -133,7 +133,7 @@ export default {
           this.selectedDate.end = end
         }
       }
-    },
+    }
   },
   created () {
     if (!this.selectedDate.start) {
@@ -147,13 +147,13 @@ export default {
     }
   },
   computed: {
-    minEnd(){
+    minEnd () {
       let start = new Date(this.selectedDate.start)
-      if(!this.selectedDate.start){
+      if (!this.selectedDate.start) {
         start = new Date()
       }
       start.setDate(start.getDate() + 1)
-      return  start
+      return start
     },
     labels () {
       const l = {

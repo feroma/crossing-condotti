@@ -18,54 +18,54 @@
         <div class="row align-items-center justify-content-center">
           <div class="booking-column">
             <h2 class="text-center">
-              {{labels[0]}}
+              {{ labels[0] }}
             </h2>
             <div class="alert-message" v-if="alert">
               <span>{{ alert }}</span>
             </div>
             <!--   /////////////// mobile-->
             <no-ssr>
-            <div class="booking-date2">
+              <div class="booking-date2">
 
-              <v-date-picker
-                color="orange"
-                :locale="currentLang"
-                is-dark
-                :min-date="new Date()"
-                v-model="selectedDate.start">
-                <template v-slot="{ inputValue, togglePopover }">
-                  <input
-                    class="custom-textfield"
-                    @click="togglePopover()"
-                    :value="inputValue"
-                    readonly
-                  />
-                </template>
-              </v-date-picker>
-              <div class="p">{{ labels[1] }}</div>
-            </div>
+                <v-date-picker
+                  color="orange"
+                  :locale="currentLang"
+                  is-dark
+                  :min-date="new Date()"
+                  v-model="selectedDate.start">
+                  <template v-slot="{ inputValue, togglePopover }">
+                    <input
+                      class="custom-textfield"
+                      @click="togglePopover()"
+                      :value="inputValue"
+                      readonly
+                    />
+                  </template>
+                </v-date-picker>
+                <div class="p">{{ labels[1] }}</div>
+              </div>
 
 
-            <div class="booking-date2">
+              <div class="booking-date2">
 
-              <v-date-picker
-                color="orange"
-                :locale="currentLang"
-                is-dark
-                :min-date="minEnd"
-                v-model="selectedDate.end">
-                <template v-slot="{ inputValue, togglePopover }">
-                  <input
-                    class="custom-textfield"
-                    @click="togglePopover()"
-                    :value="inputValue"
-                    readonly
-                  />
-                </template>
-              </v-date-picker>
-              <div class="p">{{ labels[2] }}</div>
+                <v-date-picker
+                  color="orange"
+                  :locale="currentLang"
+                  is-dark
+                  :min-date="minEnd"
+                  v-model="selectedDate.end">
+                  <template v-slot="{ inputValue, togglePopover }">
+                    <input
+                      class="custom-textfield"
+                      @click="togglePopover()"
+                      :value="inputValue"
+                      readonly
+                    />
+                  </template>
+                </v-date-picker>
+                <div class="p">{{ labels[2] }}</div>
 
-            </div>
+              </div>
             </no-ssr>
 
             <!--   /////////////// DESKTOP-->
@@ -76,7 +76,7 @@
                   {{ formatDate(selectedDate.start) }}
                 </div>
                 <div class="p">
-                  {{labels[1]}}
+                  {{ labels[1] }}
                 </div>
               </div>
               <div class="booking-date2">
@@ -84,7 +84,7 @@
                   {{ formatDate(selectedDate.end) }}
                 </div>
                 <div class="p">
-                  {{labels[2]}}
+                  {{ labels[2] }}
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@
 
                 </div>
                 <div class="p">
-                  {{labels[3]}}
+                  {{ labels[3] }}
                 </div>
               </div>
 
@@ -145,7 +145,7 @@
 
                 </div>
                 <div class="p">
-                  {{labels[4]}}
+                  {{ labels[4] }}
                 </div>
               </div>
               <div class="booking-date">
@@ -161,7 +161,7 @@
                   </select>
                 </div>
                 <div class="p">
-                  {{labels[5]}}
+                  {{ labels[5] }}
                 </div>
               </div>
             </div>
@@ -216,7 +216,7 @@ export default {
           this.selectedDate.end = end
         }
       }
-    },
+    }
   },
   created () {
     if (!this.selectedDate.start) {
@@ -231,13 +231,13 @@ export default {
   },
   components: {},
   computed: {
-    minEnd(){
+    minEnd () {
       let start = new Date(this.selectedDate.start)
-      if(!this.selectedDate.start){
+      if (!this.selectedDate.start) {
         start = new Date()
       }
       start.setDate(start.getDate() + 1)
-      return  start
+      return start
     },
     colors () {
       return {

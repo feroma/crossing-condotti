@@ -12,17 +12,17 @@
         </div>
       </div>
       <div class="row d-sm-none">
-         <layout-room-teaser
-           v-for="room in rooms"
-           v-if="room.id!==currentNavItem.id && room.thumb"
-           :key="'room-'+room.id"
-           :room = "room"/>
+        <layout-room-teaser
+          v-for="room in rooms"
+          v-if="room.id!==currentNavItem.id && room.thumb"
+          :key="'room-'+room.id"
+          :room="room"/>
       </div>
       <div class="_row d-none d-sm-block">
         <vue-slick-carousel v-bind="carousel" ref="carousel" class="room-list-carousel">
           <template #prevArrow="arrowOption">
             <div class="custom-arrow">
-             <arrow-left stroke="#80352D"/>
+              <arrow-left stroke="#80352D"/>
             </div>
           </template>
 
@@ -31,7 +31,7 @@
             v-for="room in rooms"
             v-if="room.id!==currentNavItem.id && room.thumb"
             :key="'room-'+room.id"
-            :room = "room"/>
+            :room="room"/>
 
           <template #nextArrow="arrowOption">
             <div class="custom-arrow">
@@ -50,6 +50,7 @@
 <script>
 import VueSlickCarousel from "vue-slick-carousel"
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+
 export default {
   name: "SectionLayoutRoomList",
   data () {
@@ -67,7 +68,7 @@ export default {
         "slidesToScroll": 3,
         "speed": 500,
         "adaptiveHeight": true
-      },
+      }
     }
   },
   components: {VueSlickCarousel},

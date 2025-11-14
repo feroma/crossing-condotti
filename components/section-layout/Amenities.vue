@@ -32,7 +32,7 @@
               </div>
 
               <div class="col-12 amenities-body py-3" v-if="section.body">
-                <div :class="section.body.class"  v-html="section.body.html"></div>
+                <div :class="section.body.class" v-html="section.body.html"></div>
               </div>
 
             </div>
@@ -69,10 +69,7 @@ export default {
       return this.section.tag || 'section'
     }
   },
-  methods: {
-
-
-  },
+  methods: {},
   props: {
     section: {
       type: Object,

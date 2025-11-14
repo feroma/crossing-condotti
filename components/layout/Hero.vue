@@ -29,7 +29,7 @@
       v-if="item.key_order !==undefined"
       style="z-index: 20; left: 0; top: 0"
       class="p-3 position-absolute bg-black text-white">
-      {{item.key_order}}
+      {{ item.key_order }}
     </div>
   </component>
 </template>
@@ -46,7 +46,7 @@ export default {
   components: {},
   computed: {
     itemClass () {
-      let itemClassDefault = ['item-layout','item-layout-' + this.item.layout]
+      let itemClassDefault = ['item-layout', 'item-layout-' + this.item.layout]
       let response = itemClassDefault
       if (this.item.class) {
         response = [...itemClassDefault, ...this.item.class]
@@ -69,7 +69,7 @@ export default {
       required: true
     },
     index: {
-      type: Number,
+      type: Number
     }
   }
 

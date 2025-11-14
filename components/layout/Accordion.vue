@@ -15,7 +15,7 @@
               class="accordion-header  d-flex align-items-center justify-content-between py-2">
               <div class="accordion-header-col">
                 <img class="accordion-icon mr-2"
-                   :src="ImageBaseUrl+'/'+panel.icon"/>
+                     :src="ImageBaseUrl+'/'+panel.icon"/>
               </div>
               <div class="h2 mb-0 accordion-header-col text-center">{{ panel.title }}</div>
               <div class="accordion-toggle accordion-header-col text-right">
@@ -35,7 +35,7 @@
                 :index="content_count"
                 :item="content">
               </component>
-              <div class="accordion-close"  @click.stop.prevent="togglePanel(count)">Close</div>
+              <div class="accordion-close" @click.stop.prevent="togglePanel(count)">Close</div>
             </div>
 
           </div>
@@ -70,7 +70,7 @@ export default {
       // JSON.parse() Method
       return JSON.parse(JSON.stringify(this.item))
     },
-    computedPanels(){
+    computedPanels () {
       return this.panels
     }
 
@@ -78,7 +78,7 @@ export default {
   created () {
     this.item.items.forEach((item, count) => {
       let panel = JSON.parse(JSON.stringify(item))
-      panel.toggle = this.line1;
+      panel.toggle = this.line1
       if (panel.open || panel.open === 'true') {
         this.current = count
         panel.open = false
@@ -110,24 +110,24 @@ export default {
 
 
       this.panels.forEach((panel, count) => {
-        if(id === count ){
-          if(!panel['open']){
+        if (id === count) {
+          if (!panel['open']) {
             panel['open'] = true
             panel['toggle'] = this.line2
             this.current = id
-          }else{
+          } else {
             panel['open'] = false
             panel['toggle'] = this.line1
             this.current = false
           }
-        }else{
+        } else {
           panel['open'] = false
           panel['toggle'] = this.line1
         }
       })
-      setTimeout( ()=>{
-        document.getElementById('ai-'+id).scrollIntoView();
-      },100)
+      setTimeout(() => {
+        document.getElementById('ai-' + id).scrollIntoView()
+      }, 100)
 
     }
 

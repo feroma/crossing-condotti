@@ -15,8 +15,6 @@
 <script>
 
 
-
-
 export default {
   name: "IconInstagram",
   data () {
@@ -31,7 +29,7 @@ export default {
       type: String,
       default: '#ffffff'
     }
-  },
+  }
 
 }
 </script>

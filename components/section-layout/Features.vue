@@ -4,11 +4,11 @@
       <div class="row justify-content-center">
         <div class="col-small">
           <ul class="list-unstyled feature-list py-2 py-md-5">
-            <li  class="text-center pt-2 px-2 p-sm-3"
+            <li class="text-center pt-2 px-2 p-sm-3"
                 v-for="(item,count)  in section.items"
-                 :key="'item-'+count">
-              <h3 class="text-black font-weight-light">{{item.title}}</h3>
-              <div  v-html="item.html"></div>
+                :key="'item-'+count">
+              <h3 class="text-black font-weight-light">{{ item.title }}</h3>
+              <div v-html="item.html"></div>
             </li>
           </ul>
         </div>

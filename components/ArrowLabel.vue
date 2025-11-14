@@ -1,6 +1,6 @@
 <template>
     <span class="arrow-label d-inline-block position-relative">
-      <span class="arrow-label-text" :class="textClass">{{label}}</span>
+      <span class="arrow-label-text" :class="textClass">{{ label }}</span>
       <span class="arrow-label-icon" :style="'border-color: '+stroke+';'">
         <arrow-right :stroke="stroke"/>
       </span>
@@ -32,7 +32,7 @@ export default {
     },
     label: {
       type: String,
-      required:true,
+      required: true
     }
   },
   mounted () {

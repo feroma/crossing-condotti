@@ -57,7 +57,7 @@ export default {
   components: {},
   computed: {
     itemClass () {
-      let itemClassDefault = ['item-layout','item-layout-' + this.item.layout]
+      let itemClassDefault = ['item-layout', 'item-layout-' + this.item.layout]
       let response = itemClassDefault
       if (this.item.class) {
         response = [...itemClassDefault, ...this.item.class]
@@ -73,16 +73,14 @@ export default {
 
     }
   },
-  methods: {
-
-  },
+  methods: {},
   props: {
     item: {
       type: Object,
       required: true
     },
     index: {
-      type: Number,
+      type: Number
     }
   }
 

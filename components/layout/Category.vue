@@ -3,7 +3,7 @@
 
     <div class="category-button-list d-flex flex-wrap justify-content-sm-center" v-if="computedPanels.length>1">
       <button class="category_btn mr-1 mb-1 mr-sm-2 mb-sm-2"
-              :class= "[btn.open ? 'active':'']"
+              :class="[btn.open ? 'active':'']"
               v-for="(btn, count)  in computedPanels"
               :key="'category-btn-'+btn.id"
               @click.stop.prevent="togglePanel(count)"

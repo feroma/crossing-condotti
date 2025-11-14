@@ -1,6 +1,6 @@
 <template>
   <component :is="sectionTag" :class="sectionClass">
-    <h3>{{section.title}}</h3>
+    <h3>{{ section.title }}</h3>
     <div class="gallery-row">
       <div class="gallery-item"
            v-for="(item, count) in section.items"
@@ -8,9 +8,9 @@
         <picture-wrapper :item="item"></picture-wrapper>
       </div>
     </div>
-   <div class="gallery-container">
-     <swipe class="d-block _d-sm-none"></swipe>
-   </div>
+    <div class="gallery-container">
+      <swipe class="d-block _d-sm-none"></swipe>
+    </div>
 
   </component>
 </template>

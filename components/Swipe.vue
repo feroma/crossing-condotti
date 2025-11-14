@@ -1,9 +1,9 @@
 <template>
   <div id="swipe">
-  <svg  id="swipe-svg"
-       xmlns="http://www.w3.org/2000/svg"
-       x="0px" y="0px"
-       viewBox="0 0 21 21" xml:space="preserve">
+    <svg id="swipe-svg"
+         xmlns="http://www.w3.org/2000/svg"
+         x="0px" y="0px"
+         viewBox="0 0 21 21" xml:space="preserve">
 
 
       <path class="hand" d="M15.2,10.7h-3.6V6.2c0-0.8-0.6-1.4-1.4-1.4S8.7,5.4,8.7,6.2v6.4l-1-1.1c-0.6-0.7-1.7-0.8-2.4-0.2
@@ -40,9 +40,9 @@ export default {
     this.show = true
     let anim = gsap.timeline({yoyo: true, repeat: -1})
     const el = this.$el
-     let q = gsap.utils.selector(el)
+    let q = gsap.utils.selector(el)
 
-    anim.fromTo(q('.hand'), {x: -2}, {x: 2, duration: 1, ease:'sine.inOut'})
+    anim.fromTo(q('.hand'), {x: -2}, {x: 2, duration: 1, ease: 'sine.inOut'})
   }
 }
 </script>

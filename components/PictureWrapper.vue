@@ -2,11 +2,11 @@
   <div class="picture-wrapper" :class="item.class">
     <picture style="opacity: 0">
 
-<!--      <source media="(min-width: 480px)" srcset="medium.jpg">-->
-<!--      <source media="(min-width: 1024px)" srcset="large.jpg">-->
-<!--        <source media="(orientation: portrait)" :srcset="portraitSource">-->
-<!--        <source media="(orientation: landscape)" :srcset="landscapeSource">-->
-      <source  media="(max-width: 1023px)" :srcset="smallSource">
+      <!--      <source media="(min-width: 480px)" srcset="medium.jpg">-->
+      <!--      <source media="(min-width: 1024px)" srcset="large.jpg">-->
+      <!--        <source media="(orientation: portrait)" :srcset="portraitSource">-->
+      <!--        <source media="(orientation: landscape)" :srcset="landscapeSource">-->
+      <source media="(max-width: 1023px)" :srcset="smallSource">
       <source media="(min-width: 1024px)" :srcset="largeSource">
 
       <img
@@ -54,20 +54,20 @@ export default {
   //   }
   // },
   computed: {
-    smallSource() {
+    smallSource () {
       let imageBaseUrl = this.ImageBaseUrl
-      if(this.item.imageBaseUrl){
-        imageBaseUrl =this.item.imageBaseUrl
+      if (this.item.imageBaseUrl) {
+        imageBaseUrl = this.item.imageBaseUrl
       }
-      return imageBaseUrl+'/sm/'+this.item.filename
+      return imageBaseUrl + '/sm/' + this.item.filename
     },
-    largeSource() {
+    largeSource () {
       let imageBaseUrl = this.ImageBaseUrl
-      if(this.item.imageBaseUrl){
-        imageBaseUrl =this.item.imageBaseUrl
+      if (this.item.imageBaseUrl) {
+        imageBaseUrl = this.item.imageBaseUrl
       }
-      return imageBaseUrl+'/lg/'+this.item.filename
-    },
+      return imageBaseUrl + '/lg/' + this.item.filename
+    }
 
 
   },

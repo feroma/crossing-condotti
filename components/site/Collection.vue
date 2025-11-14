@@ -49,11 +49,11 @@ export default {
     collection () {
       return this.$store.getters.getCollection
     },
-    description(){
-      return this.collection['description_'+this.currentLang]
+    description () {
+      return this.collection['description_' + this.currentLang]
     },
-    items(){
-      return this.collection['items_'+this.currentLang]
+    items () {
+      return this.collection['items_' + this.currentLang]
     }
   },
   methods: {},

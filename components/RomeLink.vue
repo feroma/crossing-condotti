@@ -24,17 +24,16 @@ export default {
   computed: {
     currentLang () {
 
-      return this.$store.getters.getCurrentLanguage === 'en'?'':this.$store.getters.getCurrentLanguage
+      return this.$store.getters.getCurrentLanguage === 'en' ? '' : this.$store.getters.getCurrentLanguage
 
     },
     ImageBaseUrl () {
       let development = process.env.NODE_ENV !== 'production'
       let base = development ? '/' : '/crossing-manzoni/'
       return base + development ? 'https://www.stage72.info/crossing-manzoni/photos' : '/photos'
-    },
+    }
   },
-  methods:{
-  }
+  methods: {}
 }
 </script>
 

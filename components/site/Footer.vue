@@ -14,21 +14,21 @@
               <!-- ------------ home-->
               <li>
                 <nuxt-link :to="items[0].slug">
-                  {{items[0].label}}
+                  {{ items[0].label }}
                 </nuxt-link>
               </li>
 
               <!-- ------------ ROOMS-->
               <li>
                 <nuxt-link :to="categories[0].child[0].slug">
-                  {{categories[0].label}}
+                  {{ categories[0].label }}
                 </nuxt-link>
               </li>
 
               <!-- ------------ rest-->
               <li v-for="(item, index) in items" :key="'item-'+index" v-if="index>0 && !item.hide">
                 <nuxt-link :to="item.slug">
-                  {{item.label}}
+                  {{ item.label }}
                 </nuxt-link>
               </li>
 
@@ -56,7 +56,7 @@
                 <div class="col-12 col-sm-4">
                   <p class="text-gray-1 text-center d-block">
                     {{ footer_labels[0] }}<br>
-                     <strong><span v-html="contacts.phone"/></strong>
+                    <strong><span v-html="contacts.phone"/></strong>
                   </p>
                 </div>
                 <div class="col-12 col-sm-4">
@@ -80,7 +80,7 @@
 
             <div class="col-12 border-top py-2">
               <div class="text-center text-sm-right text-white pb-5 pb-sm-3">
-                Copyright Crossing Manzoni - All right reserved -  P.IVA.: 05950050871
+                Copyright Crossing Manzoni - All right reserved - P.IVA.: 05950050871
               </div>
             </div>
 
@@ -110,19 +110,19 @@ export default {
     }
   },
   computed: {
-    items(){
+    items () {
       return this.$store.getters['getMenuItemsByLang'](this.currentLang)
     },
-    categories(){
-      return this.$store.getters['getMenuItemsByLang'](this.currentLang,'categories')
+    categories () {
+      return this.$store.getters['getMenuItemsByLang'](this.currentLang, 'categories')
     },
-    footer_labels(){
+    footer_labels () {
       return this.contacts['footer_labels'][this.currentLang]
     }
   },
   methods: {
-    toggleMenu(){
-        this.$store.commit('TOGGLE_MENU')
+    toggleMenu () {
+      this.$store.commit('TOGGLE_MENU')
     }
   },
   props: {},

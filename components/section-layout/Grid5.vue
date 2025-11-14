@@ -1,7 +1,7 @@
 <template>
   <component :is="sectionTag" :class="sectionClass">
 
-   <div class="container">
+    <div class="container">
       <div class="row">
 
 
@@ -10,7 +10,7 @@
 
 
           <div :class="section.items[0].class" v-else>
-            <div :class="sentenceClasses.div" >
+            <div :class="sentenceClasses.div">
               <div :class="sentenceClasses.text"
                    v-html="section.items[0].html"></div>
             </div>
@@ -22,7 +22,7 @@
           <picture-wrapper v-if="section.items[1].filename" :item="section.items[1]"></picture-wrapper>
         </div>
       </div>
-   </div>
+    </div>
 
   </component>
 </template>
