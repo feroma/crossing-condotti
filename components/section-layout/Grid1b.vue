@@ -19,7 +19,6 @@
           <picture-wrapper v-if="section.items[2].filename"
                            class="mb-xs-gutter" :item="section.items[2]"></picture-wrapper>
           <div :class="section.items[2].class" v-else>
-
             <div :class="sentenceClasses.div">
               <div :class="sentenceClasses.text"
                    v-html="section.items[2].html"></div>
