@@ -1160,7 +1160,7 @@ $col4_col2: 33.6538%;
 .item-layout-hero{
   .picture-wrapper {
     picture {
-      height: 100vh;
+    //  height: 100vh;
     }
   }
 }
@@ -1746,6 +1746,11 @@ $table_border: solid 1px $gray-5;
       opacity: 1;
       background-color: $brick;
       border-color: $brick !important;
+    }
+    .arrow-right{
+      path{
+        stroke: white;
+      }
     }
   }
 

@@ -24,7 +24,7 @@ export default {
   props: {
     stroke: {
       type: String,
-      default: '#D37B65'
+      default: '#cda434'
     },
     textClass: {
       type: String,

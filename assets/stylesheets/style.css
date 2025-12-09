@@ -7777,9 +7777,6 @@ h4, .h4 {
       font-weight: bold;
       text-transform: uppercase; }
 
-.item-layout-hero .picture-wrapper picture {
-  height: 100vh; }
-
 .col-small .item-layout-hero .picture-wrapper picture {
   height: 100%; }
 
@@ -8175,6 +8172,8 @@ h4, .h4 {
       opacity: 1;
       background-color: #cda434;
       border-color: #cda434 !important; }
+    .arrow-label:hover .arrow-right path {
+      stroke: white; }
 
 .contact-item .icon {
   max-width: 96px;
