@@ -22,7 +22,7 @@
         <vue-slick-carousel v-bind="carousel" ref="carousel" class="room-list-carousel">
           <template #prevArrow="arrowOption">
             <div class="custom-arrow">
-              <arrow-left stroke="#80352D"/>
+              <arrow-left/>
             </div>
           </template>
 
@@ -35,7 +35,7 @@
 
           <template #nextArrow="arrowOption">
             <div class="custom-arrow">
-              <arrow-right stroke="#80352D"/>
+              <arrow-right/>
             </div>
           </template>
 
@@ -60,7 +60,7 @@ export default {
         "arrows": true,
         "dots": true,
         //"dotsClass": "slick-dots custom-dot-class",
-        "centerMode": true,
+        "centerMode": false,
         "centerPadding": "48px",
         "focusOnSelect": true,
         "infinite": true,

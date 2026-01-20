@@ -79,14 +79,14 @@ $dots-radius: 20px;
     button:before {
       opacity: .5;
       background-color: transparent;
-      border: solid 2px $gray-500;
+      border: solid 2px $brick;
     }
 
     &.slick-active {
       button:before {
         opacity: 1;
-        background-color: $brick-light;
-        border-color: $brick-light;
+        background-color: $brick;
+        border-color: $brick;
       }
     }
   }

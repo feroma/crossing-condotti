@@ -25,7 +25,7 @@
                 <ul class="list-unstyled">
                   <!-- ------------ home-->
                   <li>
-                    <a href="#" @click.stop.prevent="changeRoute(items[0].slug)" class="d-block text-brick-light hover-white text-serif h3 py-1">
+                    <a href="#" @click.stop.prevent="changeRoute(items[0].slug)" class="d-block text-brick hover-white text-serif h3 py-1">
                       {{ items[0].label }}
                     </a>
                   </li>
@@ -33,7 +33,7 @@
                   <li>
                     <div class="cat-box d-flex">
                       <div class="cat-name w-50">
-                        <div class="text-brick-light text-serif h3">{{ categories[0].label }}</div>
+                        <div class="text-brick text-serif h3">{{ categories[0].label }}</div>
                       </div>
                       <div class="rooms text-white w-50">
 
@@ -104,7 +104,7 @@
           <div class="col-12 col-sm-3 offset-sm-1">
             <ul class="list-unstyled  d-sm-block py-2">
               <li v-for="(item, index) in items" :key="'item-'+index" v-if="index>0 && !item.hide">
-                <a href="#" @click.stop.prevent="changeRoute(item.slug)" class="d-block text-brick-light hover-white text-serif h3 pb-1  pr-2">
+                <a href="#" @click.stop.prevent="changeRoute(item.slug)" class="d-block text-brick hover-white text-serif h3 pb-1  pr-2">
                   {{ item.label }}
                 </a>
               </li>

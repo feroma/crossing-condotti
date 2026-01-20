@@ -80,7 +80,9 @@
 
             <div class="col-12 border-top py-2">
               <div class="text-center text-sm-right text-white pb-5 pb-sm-3">
-                Copyright Crossing Manzoni - All right reserved - P.IVA.: 05950050871
+                Copyright Crossing Condotti - All right reserved - P.IVA.: 05950050871 - CIN: IT058091B4TGH49IP7 - CIN IT058091C2X4WJ8ECY - CIN IT058091B4MWC5CQSF - <nuxt-link to="privacy">
+                Privacy policy
+              </nuxt-link>
               </div>
             </div>
 
