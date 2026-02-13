@@ -22,7 +22,7 @@
         <vue-slick-carousel v-bind="carousel" ref="carousel" class="room-list-carousel">
           <template #prevArrow="arrowOption">
             <div class="custom-arrow">
-              <arrow-left/>
+              <arrow-left stroke="#cda434"/>
             </div>
           </template>
 
@@ -35,7 +35,7 @@
 
           <template #nextArrow="arrowOption">
             <div class="custom-arrow">
-              <arrow-right/>
+              <arrow-right stroke="#cda434"/>
             </div>
           </template>
 
