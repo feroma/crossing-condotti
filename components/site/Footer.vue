@@ -83,9 +83,9 @@
                 Copyright Crossing Condotti - All right reserved - P.IVA.: 05950050871 - <nuxt-link to="privacy">
                 Privacy policy
               </nuxt-link>
-                - <a href="#" class="company-details-toggle">Company Details </a>
+                - <a href="#" class="company-details-toggle" :class="{ opened: companyDetailsOpen }" @click="toggleCompanyDetails">Company Details </a>
               </div>
-              <div class="company-details text-white text-right">
+              <div ref="companyDetails" class="company-details text-white text-right">
                 <p>
                   <strong>Luxury House S.r.l.</strong><br>
                   Via Villalba 2 – 95024 Acireale (CT)<br>
@@ -124,8 +124,8 @@ export default {
   name: "SiteFooter",
   data () {
     return {
-
-      show: false
+      show: false,
+      companyDetailsOpen: false
     }
   },
   computed: {
@@ -142,6 +142,30 @@ export default {
   methods: {
     toggleMenu () {
       this.$store.commit('TOGGLE_MENU')
+    },
+    toggleCompanyDetails(event) {
+      event.preventDefault()
+      this.companyDetailsOpen = !this.companyDetailsOpen
+
+      const element = this.$refs.companyDetails
+
+      if (this.companyDetailsOpen) {
+        // Apri accordion
+        gsap.to(element, {
+          height: 'auto',
+          opacity: 1,
+          duration: 0.3,
+          ease: 'power2.out'
+        })
+      } else {
+        // Chiudi accordion
+        gsap.to(element, {
+          height: 0,
+          opacity: 0,
+          duration: 0.3,
+          ease: 'power2.in'
+        })
+      }
     }
   },
   props: {},

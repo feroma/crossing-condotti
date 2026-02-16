@@ -2447,8 +2447,25 @@ $topGapMd: 160px;
     background-position: center;
     transition: transform 0.3s ease;
   }
-
+  &.opened{
+    font-weight: bold;
+  }
   &.opened::after {
     transform: rotate(180deg);
+  }
+}
+
+.company-details {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  ul {
+    li{
+      span{
+        font-weight: bold;
+      }
+    }
   }
 }

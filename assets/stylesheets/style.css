@@ -8643,7 +8643,18 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     transition: transform 0.3s ease; }
+  .company-details-toggle.opened {
+    font-weight: bold; }
   .company-details-toggle.opened::after {
     transform: rotate(180deg); }
+
+.company-details {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .company-details ul li span {
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
