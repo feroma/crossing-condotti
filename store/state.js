@@ -10,8 +10,8 @@ export default () => ({
     gridDebug: false,
 
     currentLang: 'en',
-    languages: ['en', 'it'],
-
+    //languages: ['en', 'it'],
+    languages: ['en'],
     currentSlug: '/'
   },
   mediaModal: {

@@ -10,7 +10,7 @@
         </div>
         <book-link class="d-none d-sm-inline-block mb-0"/>
         <div class="d-flex justify-content-end flex-1-1">
-          <language-switcher/>
+          <language-switcher v-if="siteOptions.languages.length>1"/>
           <menu-icon @click.native.stop.prevent="toggleMenu"/>
         </div>
 

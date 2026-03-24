@@ -80,7 +80,7 @@
 
             <div class="col-12 border-top py-2">
               <div class="text-center text-sm-right text-white pb-5 pb-sm-3">
-                Copyright Crossing Condotti - All right reserved - P.IVA.: 05950050871 - <nuxt-link to="privacy">
+                Copyright Crossing Condotti - All right reserved - P.IVA.: 04512230873 - <nuxt-link to="privacy">
                 Privacy policy
               </nuxt-link>
                 - <a href="#" class="company-details-toggle" :class="{ opened: companyDetailsOpen }" @click="toggleCompanyDetails">Company Details </a>
@@ -93,11 +93,16 @@
                   REA – 301284
                 </p>
                 <ul class="list-unstyled">
-                  <li><span>Crossing Manzoni:</span> CIN IT015146B4CBIQTWEY</li>
-                  <li><span>Crossing Condotti:</span> CIN IT058091B4TGH49IP7</li>
-                  <li><span>Crossing Corso:</span> CIN IT058091C2X4WJ8ECY</li>
-                  <li><span>Casa Crossing:</span> CIN IT058091B4MWC5CQSF</li>
-                  <li><span>Crossing The Rock:</span> CIN IT087004B4DDUYF933</li>
+
+
+
+<!--                  <li><strong>Crossing Manzoni:</strong> <span>CIN IT015146B4CBIQTWEY</span></li>-->
+                  <li><strong>Crossing Condotti:</strong> <span>CIN IT058091B4TGH49IP7</span></li>
+                  <li><strong>Crossing Corso:</strong> <span>CIN IT058091C2X4WJ8ECY</span></li>
+                  <li><strong>Casa Crossing:</strong> <span>CIN IT058091B4MWC5CQSF</span></li>
+<!--                  <li><strong>Crossing The Rock:</strong> <span>CIN IT087004B4DDUYF933</span></li>-->
+
+
                 </ul>
 
               </div>

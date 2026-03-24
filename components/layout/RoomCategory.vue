@@ -18,6 +18,7 @@
         <div class="category-rooms d-flex flex-column align-items-center">
           <nuxt-link
             v-for="room in item.child"
+            v-if="!room.hide"
             :key="'room-'+room.id"
             :to="room.slug"
             class="py-1"

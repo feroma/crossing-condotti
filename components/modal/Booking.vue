@@ -25,6 +25,7 @@
             </div>
             <!--   /////////////// mobile-->
             <no-ssr>
+              <div class="d-block d-md-none">
               <div class="booking-date2">
 
                 <v-date-picker
@@ -65,6 +66,7 @@
                 </v-date-picker>
                 <div class="p">{{ labels[2] }}</div>
 
+              </div>
               </div>
             </no-ssr>
 

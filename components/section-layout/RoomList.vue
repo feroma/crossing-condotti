@@ -14,7 +14,7 @@
       <div class="row d-sm-none">
         <layout-room-teaser
           v-for="room in rooms"
-          v-if="room.id!==currentNavItem.id && room.thumb"
+          v-if="room.id!==currentNavItem.id && room.thumb && !room.hide"
           :key="'room-'+room.id"
           :room="room"/>
       </div>
@@ -29,7 +29,7 @@
 
           <layout-room-teaser
             v-for="room in rooms"
-            v-if="room.id!==currentNavItem.id && room.thumb"
+            v-if="room.id!==currentNavItem.id && room.thumb && !room.hide"
             :key="'room-'+room.id"
             :room="room"/>
 

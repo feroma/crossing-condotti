@@ -7724,6 +7724,10 @@ h4, .h4 {
   position: relative;
   width: 100%;
   height: 100%; }
+  .picture-wrapper.patina-3 {
+    background-color: #403F3C; }
+    .picture-wrapper.patina-3 img {
+      opacity: 0.75; }
   .picture-wrapper picture {
     display: block;
     width: 100%;
@@ -8654,7 +8658,13 @@ section {
   overflow: hidden;
   padding-top: 0;
   padding-bottom: 0; }
-  .company-details ul li span {
-    font-weight: bold; }
+  .company-details li strong {
+    min-width: 150px;
+    text-align: right;
+    display: inline-block; }
+  .company-details li span {
+    min-width: 240px;
+    text-align: left;
+    display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

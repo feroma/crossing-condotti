@@ -38,7 +38,7 @@
                       <div class="rooms text-white w-50">
 
                         <ul class="list-unstyled">
-                          <li v-for="(item, index) in categories[0].child" :key="'room-'+index">
+                          <li v-for="(item, index) in categories[0].child" v-if="!item.hide"  :key="'room-'+index">
                             <a href="#" @click.stop.prevent="changeRoute(item.slug)" class="d-block text-white hover-brick-light text-serif h3b py-1">
                               {{ item.label }}
                             </a>
@@ -65,7 +65,7 @@
                       </div>
                       <div class="rooms  w-50">
                         <ul class="list-unstyled">
-                          <li v-for="(item, index) in cat.child" :key="'room-'+index">
+                          <li v-for="(item, index) in cat.child" v-if="!item.hide" :key="'room-'+index">
                             <a href="#" @click.stop.prevent="changeRoute(item.slug)" class="d-block text-white hover-brick-light text-serif h5 mb-1">
                               {{ item.label }}
                             </a>
