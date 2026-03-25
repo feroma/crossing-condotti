@@ -8658,13 +8658,12 @@ section {
   overflow: hidden;
   padding-top: 0;
   padding-bottom: 0; }
-  .company-details li strong {
-    min-width: 150px;
-    text-align: right;
-    display: inline-block; }
   .company-details li span {
     min-width: 240px;
     text-align: left;
     display: inline-block; }
+    @media (min-width: 1360px) {
+      .company-details li span {
+        min-width: 275px; } }
 
 /*# sourceMappingURL=style.css.map */

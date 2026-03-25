@@ -81,7 +81,7 @@
             <div class="col-12 border-top py-2">
               <div class="text-center text-sm-right text-white pb-5 pb-sm-3">
                 Copyright Crossing Condotti - All right reserved - P.IVA.: 04512230873 - <nuxt-link to="privacy">
-                Privacy policy
+                Privacy Policy
               </nuxt-link>
                 - <a href="#" class="company-details-toggle" :class="{ opened: companyDetailsOpen }" @click="toggleCompanyDetails">Company Details </a>
               </div>
@@ -89,8 +89,8 @@
                 <p>
                   <strong>Luxury House S.r.l.</strong><br>
                   Via Villalba 2 – 95024 Acireale (CT)<br>
-                  CF/PIVA: 04512230873 – Registro d'impresa Sud Est Sicilia<br>
-                  REA – 301284
+                  REA - CT - 301284<br> Registro d'impresa Sud Est Sicilia<br>
+
                 </p>
                 <ul class="list-unstyled">
 
