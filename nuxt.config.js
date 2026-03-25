@@ -50,7 +50,8 @@ export default {
     {
       src: "~/plugins/locomotiveScroll.js",
       ssr: false
-    }
+    },
+    { src: '~/plugins/gtm.client.js', mode: 'client' }
   ],
   //target: 'static',
   // Auto import components: https://go.nuxtjs.dev/config-components
