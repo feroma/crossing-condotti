@@ -50,8 +50,8 @@ export default {
     {
       src: "~/plugins/locomotiveScroll.js",
       ssr: false
-    },
-    { src: '~/plugins/gtm.client.js', mode: 'client' }
+    }
+    // GTM spostato in app.html; consent default rimosso (lo gestisce CookieScript via GTM)
   ],
   //target: 'static',
   // Auto import components: https://go.nuxtjs.dev/config-components
